@@ -18,7 +18,7 @@ const map = new mapboxgl.Map({
 
 const coordinates = [-87.6354, 41.8885]
 
-buildMarker(coordinates, 'Activity').addTo(map);
+buildMarker('Activity', coordinates).addTo(map);
 // new mapboxgl.Marker(DOMelement).setLngLat(coordinates).addTo(map);
 
 

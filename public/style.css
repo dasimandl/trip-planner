@@ -1,14 +1,40 @@
 * {
-  box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.flex {
+	display: flex;
 }
 
 body {
-  margin: 0;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  background-color: #C1B5AD;
+	margin: 0;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	background-color: #C1B5AD;
 }
 
 #map {
-  height: 100vh;
-  width: 100vw;
+	height: calc(100vh - 65px);
+	width: 100vw;
+}
+
+nav {
+	height: 65px;
+	background-color: blue;
+}
+
+#sidebar {
+	padding-left: 25px;
+	width: 40%;
+}
+
+@media screen and (max-width: 600px) {
+	.flex {
+		flex-flow: column wrap;
+		align-items: center;
+		padding: 15px 0;
+	}
+}
+
+select {
+	width: 50%;
 }
