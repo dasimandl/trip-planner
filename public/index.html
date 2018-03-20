@@ -1,17 +1,22 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<title>Trip Planner</title>
 	<link href='https://api.mapbox.com/mapbox-gl-js/v0.44.1/mapbox-gl.css' rel='stylesheet' />
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Oleo+Script+Swash+Caps:400,700" rel="stylesheet">
 	<link rel="stylesheet" href="./style.css"></link>
 	<script src="./bundle.js" defer></script>
 </head>
+
 <body>
 	<div>
 		<nav class="flex">
-			<h3>Home</h3>
-			<h3>About</h3>
-			<h3>Contact</h3>
+			<h3>
+				<i class="material-icons">airplanemode_active</i>
+				<h3>rip Planner</h3>
+			</h3>
 		</nav>
 	</div>
 
@@ -21,21 +26,28 @@
 			<div id="selectors">
 				<ul>
 					<li>
-						<h3>Hotels</h3>
+						<h3>
+							<i class="material-icons">hotel</i>
+						 Hotels
+						</h3>
 						<select name="hotels">
 							<option value="test">Test</option>
 							<option value="test2">Test2</option>
 						</select>
 					</li>
 					<li>
-						<h3>Restaurants</h3>
+						<h3>
+							<i class="material-icons">local_dining</i>
+							Restaurants</h3>
 						<select name="Restaurants">
 							<option value="test">Test</option>
 							<option value="test2">Test2</option>
 						</select>
 					</li>
 					<li>
-						<h3>Things To Do</h3>
+						<h3>
+							<i class="material-icons">group</i>
+							Things To Do</h3>
 						<select name="things to do">
 							<option value="test">Test</option>
 							<option value="test2">Test2</option>
@@ -44,8 +56,8 @@
 				</ul>
 			</div>
 			<div id="itinerary">
-				<h2>Itinerary:</h2>
 				<ul>
+					<h2>Itinerary:</h2>
 					<li>
 						<h3>My Hotel</h3>
 					</li>
@@ -61,4 +73,5 @@
 	</div>
 
 </body>
+
 </html>

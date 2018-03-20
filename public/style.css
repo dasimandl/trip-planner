@@ -14,26 +14,62 @@ body {
 
 #map {
 	height: calc(100vh - 65px);
-	width: 100vw;
+	width: 100%;
 }
 
 nav {
+	padding-left: 15px;
+	font-size:  1em;
+	letter-spacing: 3px;
+	justify-content: flex-start;
+	align-items: center;
 	height: 65px;
-	background-color: blue;
+	background-color: #1479AE
 }
 
-#sidebar {
+.material-icons{
+	font-size: 1.4em;
+
+}
+
+nav i {
+	z-index: 2;
+	position: absolute;
+	top: -28px;
+	left: 8px;
+}
+
+nav h3 {
 	padding-left: 25px;
+	position: relative;
+	color: #e0eff2;
+	font: italic bold 2.5em Georgia, Serif;
+
+}
+ul {
+  list-style-type: none;
+}
+#sidebar i {
+	padding-right: 8px;;
+}
+#sidebar {
+	align-items: center;
 	width: 40%;
 }
+#selectors h3  {
+	letter-spacing: 1px;
+	display: flex;
+	align-items: center;
 
+}
+/*
 @media screen and (max-width: 600px) {
 	.flex {
 		flex-flow: column wrap;
 		align-items: center;
 		padding: 15px 0;
 	}
-}
+} */
 
 select {
 	width: 50%;
